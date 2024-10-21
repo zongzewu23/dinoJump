@@ -1,7 +1,7 @@
 import "./style.css";
 const dino = document.querySelector("#dino");
 const block = document.querySelector("#block");
-window.addEventListner("keydown", (event) => {
+window.addEventListener("keydown", (event) => {
   console.log(event);
   if (event.code == "Space") {
     console.log("Jump fucking High");
