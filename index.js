@@ -1,4 +1,3 @@
-import "./style.css";
 const dino = document.querySelector("#dino");
 const block = document.querySelector("#block");
 window.addEventListener("keydown", (event) => {
@@ -21,6 +20,8 @@ setInterval(() => {
   );
   if (blockLeft < 20 && blockLeft > -20 && dinoBottom <= 20) {
     console.log("Bloody Death");
+    alert("Game Over!");
+    block.style.animation = "none";
   }
 }, 10);
 
